@@ -46,17 +46,55 @@ namespace MadLibs{
         play = Console.ReadLine().ToLower();
       }
       
-      // Define user input and variables:
-
-
-      // The template for the story:
-
-       story = "This morning _ woke up feeling _. 'It is going to be a _ day!' Outside, a bunch of _s were protesting to keep _ in stores. They began to _ to the rhythm of the _, which made all the _s very _. Concerned, _ texted _, who flew _ to _ and dropped _ in a puddle of frozen _. _ woke up in the year _, in a world where _s ruled the world.";
-
-
-      // Print the story:
+      if(String.Equals("spy",template)){
+        // getting adjs
+        Console.WriteLine("Enter 3 adjectives; Press enter after each word");
+        string adj1 = Console.ReadLine();
+        string adj2 = Console.ReadLine();
+        string adj3 = Console.ReadLine();
+        
+        // getting nouns
+        Console.WriteLine("Enter 4 nouns; Press enter after each word");
+        string noun1 = Console.ReadLine();
+        string noun2 = Console.ReadLine();
+        string noun3 = Console.ReadLine();
+        string noun4 = Console.ReadLine();
+        
+        Console.WriteLine("Enter 3 verbs; Press enter after each word");
+        string verb1 = Console.ReadLine();
+        string verb2 = Console.ReadLine();
+        string verb3 = Console.ReadLine();
+        
+        string title = ($"{noun1} ... James {noun1}");
+         story = $"\"What would you like to drink my friend,\" asked the bartender. \"I'll take a {noun2}, {verb1} please,\" replied James {noun1}. \"An odd choice,\" replied the bartender before handing him his drink that resembled boiled {noun4} more than what he ordered. All the same James wasn't here for the drinks, he was on a mission. If he wasn't careful Doctor {noun3} would infect the world with {adj1},{adj2} puppies; a horrible fate. James straightened his bowtie and {verb2} across the room towards what he suspected was a secret door. Villians and there {adj3} doors, no subtlety. Guess I'll go finish this before he took one last sip of his drink and {verb3} the door";
+        Console.WriteLine(title.ToUpper());
+        Console.WriteLine(story);
+        Console.WriteLine("\n");
+        Console.WriteLine("To play again enter yes, to exit, enter anything else");
+        play = Console.ReadLine().ToLower();
       }
-
-    }
-  }
-}
+      // party template option
+      if(String.Equals("party",template)){
+        // getting adjs
+        Console.WriteLine("Enter 3 adjectives; Press enter after each word");
+        string adj1 = Console.ReadLine();
+        string adj2 = Console.ReadLine();
+        string adj3 = Console.ReadLine();
+        
+        // getting nouns
+        Console.WriteLine("Enter 3 nouns; Press enter after each word");
+        string noun1 = Console.ReadLine();
+        string noun2 = Console.ReadLine();
+        string noun3 = Console.ReadLine();
+        
+        Console.WriteLine("Enter 3 verbs; Press enter after each word");
+        string verb1 = Console.ReadLine();
+        string verb2 = Console.ReadLine();
+        string verb3 = Console.ReadLine();
+        
+        string title = "Party";
+         story = $"Pulling up to the house in our {noun1}, I felt {adj2}. I hopped out of my {noun1} and {verb1} my {noun2} before heading in. There was {noun3} everywhere. It covered the ceilings, the floors, and the walls. It was so {adj3}. It couldn't stop me from {verb2} though. I walked right up to the birthday boy and began to {verb2} and also {verb3}. Oh yeah. I was gonna be remembered for this!";
+        Console.WriteLine(title);
+        Console.WriteLine(story);
+        Console.WriteLine("\n");
+        Console.WriteLine("To play again enter yes, to exit, enter anything else");

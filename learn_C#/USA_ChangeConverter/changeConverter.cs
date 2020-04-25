@@ -1,5 +1,5 @@
 using System;
-namespace changeCoverter{
+namespace changeConverter{
   class MainClass{
     public static void Main(string[] args){
       // variables

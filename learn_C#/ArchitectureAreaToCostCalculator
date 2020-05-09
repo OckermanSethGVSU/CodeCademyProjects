@@ -1,2 +1,0 @@
-This program calculates the cost in pesos of a given floor plan area by breaking it into shapes with known area formulas. Currently
-it only can calculate one area because those shapes are defined in the main. 

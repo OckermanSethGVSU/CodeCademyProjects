@@ -1,9 +1,5 @@
 Shopping List
-added this stuff
-These are swear words
-******
-*****
-****
+
 apples
 bananas
 yogurt
